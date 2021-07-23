@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:700);
+
+
+body {
+  background: url(https://farm5.staticflickr.com/4139/4825532997\_7a7cd3d640\_b.jpg);
+  background-size: cover;
+  height: 100%;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #666;
+}
+#dec-section {
+  width: 100%;
+  height: auto;
+  padding:0;
+  background: #fff;
+  margin: 80px auto;
+  position: relative;
+  min-height: 300px;
+
+  #fieldsets {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+  }
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  textarea {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    &:focus {
+      outline: none;
+      border: 1px solid darken(#2cbab2,10%);
+    }
+  }
+
+  input[type=radio]{
+    margin: 6px;
+    display: inline-block;
+  }
+  fieldset {
+    border: none;
+    position: absolute;
+    left: -640px;
+    width: 600px;
+    padding: 10px 0;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    opacity: 0;
+    &.current {
+      left: 20px;
+      opacity: 1;
+    }
+    &.next {
+      left: 640px;
+    }
+  }
+  input[type=submit] {
+    display: none;
+    border: none;
+  }
+  #section-tabs {
+    font-size: 0.8em;
+    height: 50px;
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: 50px;
+    padding: 0;
+    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+    box-shadow: 0 0 40px -18px;
+    li {
+      span {
+        color: #bababa;
+        display: none;
+      }
+      p{
+        margin: 0;
+      }
+      &.active {
+        color: #444;
+        cursor: pointer;
+      }
+      color: #e7efe6;
+      cursor: not-allowed;
+      border-left: 1px solid #aaa;
+      text-decoration: none;
+      padding: 0 10px;
+      float: left;
+      width: 20%;
+      height: inherit;
+      box-sizing: border-box;
+      text-align: center;
+      font-weight: bold;
+      line-height: 20px;
+      background: #17a2b8;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 0 32px -5px #17a2b8;
+      &:after {
+        content: "";
+        display: block;
+        margin-left: 0;
+        position: absolute;
+        right: -50px;
+        top: 0;
+      }
+      &.current {
+        opacity: 1;
+        background: #fff;
+        z-index: 999;
+        border-left: none;
+        box-shadow: none;
+      }
+      &.active{
+        opacity: 1;
+        background: #fff;
+        z-index: 999;
+        border-left: none;
+        box-shadow: none;
+        &:after {
+          border: 25px solid transparent;
+          border-left: 25px solid #fff;
+        }
+      }
+    }
+  }
+  .error {
+    color: #bf2424;
+    display: block;
+  }
+  input.error, textarea.error {
+    border-color: #bf2424;
+    &:focus {
+      border-color: #bf2424;
+    }
+  }
+  label.error {
+    margin-bottom: 20px;
+  }
+  input.valid {
+    color: green;
+  }
+  label.valid {
+    position: absolute;
+    right: 20px;
+  }
+  input+.valid, textarea+.valid {
+    display: none;
+  }
+  .valid+.valid {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    margin-top: -36px;
+    color: green;
+  }
+
+  .btn {
+    border: none;
+    padding: 8px;
+    background: #166a15;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    &:hover {
+      background: darken(#166a15, 6%);
+    }
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+}

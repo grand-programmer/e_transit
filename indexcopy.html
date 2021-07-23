@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Е-Транзит | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="assets/stylecopy.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Е-Транзит</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Жавлон Мамарахимов</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon"></i>
+              <p>
+                Юкни декларациялаш
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon "></i>
+              <p>
+                Транспортлар тўғрисида маълумот
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Транспортлар рўйхати</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./indext.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Янги транспортни киритиш</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon "></i>
+              <p>
+                Юк қабул қилувчилар
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Қабул қилувчилар рўйхати</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Янги қабул қилувчини киритиш</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon "></i>
+              <p>
+                Товарлар
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Товарлар рўйхати</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Янги товар киритиш</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Электрон декларациялаш тизими</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="dec-section">
+            <ul id="section-tabs">
+              <li class="current active"><span>1.</span>
+                <p> Транспорт тўғрисида маълумот</p>
+
+              </li>
+              <li><span>2.</span>
+                <p>Юк ташувчи тўғрисида маълумот </p>
+              </li>
+              <li><span>3.</span>
+                <p>Юк тўғрисида маълумот</p></li>
+              <li><span>4.</span>
+                <p>Юборилаётган юклар тўғрисида маълумот</p></li>
+              <li><span>5.</span>
+                <p>Инвойсни генерация қилиш</p></li>
+            </ul>
+            <div id="fieldsets">
+              <fieldset class="current">
+                <section class="content">
+                  <div class="container-fluid">
+                    <h3 class="mb-3">Транспорт тўғрисида маълумотларни киритинг</h3>
+                    <div class="transport-turi">
+                      <p class="prompt-type-transport">Транспорт тўғрисида маълумотларни киритишдан олдин транспорт
+                        турини белгиланг </p>
+                      <div class="transport-item-1 transport-item" data-transport-id="transport-1">Авто</div>
+                      <div class="transport-item-2 transport-item" data-transport-id="transport-2">Темир йўл</div>
+                      <div class="transport-item-3 transport-item" data-transport-id="transport-3">Авиа</div>
+                      <div class="transport-item-4 transport-item" data-transport-id="transport-4">Дарё</div>
+                    </div>
+                    <div class="transport-1 d-none">
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- SELECT2 EXAMPLE -->
+                          <div class="card card-default ">
+                            <div class="card-header" data-card-widget="collapse">
+                              <h3 class="card-title">Юк ортилган транспорт тўғрисида маълумотларни киритинг</h3>
+
+                            </div>
+
+
+                            <div class="card-body  ">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <label class="m-b-32">Рўйхатдан ўтган мамлакат</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                      <option selected="selected">Узбекистан</option>
+                                      <option>Россия</option>
+                                      <option>Қозоғистон</option>
+                                      <option>Туркманистон</option>
+                                      <option>Қирғизистон</option>
+                                      <option>Тожикистон</option>
+                                      <option>Афғонистон</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <label class="m-b-32 ">Автотранспорт тури</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                      <option selected="selected">Юк автомобил</option>
+                                      <option>Енгил</option>
+                                    </select>
+                                  </div>
+
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-2">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Транспорт воситаси модели ва маркаси</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-md-2">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Транспорт воситаси давлат рақами</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-2">
+
+                                  <div class="form-group">
+                                    <label class="m-b-32">VIN рақами А/Т</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="col-md-2">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Юксиз вазни (кг)</label>
+                                    <div class="select2-purple">
+                                      <input type="text" class="form-control">
+                                    </div>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="btn-show-input btn btn-default btn-icon btn-xs" data-toggle="modal"
+                                       data-target="#yangi_tirkama_content"><i class="fa fa-plus"></i> Тиркама
+                                    маълумотларини киритиш
+                                  </div>
+                                  <div class="modal fade" id="yangi_tirkama_content" tabindex="-1" role="dialog"
+                                       aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                      <div class="modal-content">
+                                        <form method="post" action="">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title">Тиркама тўғрисида маълумотларни киритинг</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                  <label>Рўйхатдан ўтган мамлакат</label>
+                                                  <select class="form-control select2" style="width: 100%;">
+                                                    <option selected="selected">Узбекистан</option>
+                                                    <option>Россия</option>
+                                                    <option>Қозоғистон</option>
+                                                    <option>Туркманистон</option>
+                                                    <option>Қирғизистон</option>
+                                                    <option>Тожикистон</option>
+                                                    <option>Афғонистон</option>
+                                                  </select>
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <!-- /.col -->
+                                              <div class="col-md-6">
+                                                <!-- /.form-group -->
+                                                <div class="form-group">
+                                                  <label>Тиркаманинг давлат рақами</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <!-- /.col -->
+
+                                              <div class="col-6">
+                                                <div class="form-group">
+                                                  <label>VIN рақами А/Т</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <!-- /.col -->
+                                              <div class="col-6">
+                                                <div class="form-group">
+                                                  <label>Юксиз вазни, (кг)</label>
+                                                  <div class="select2-purple">
+                                                    <input type="text" class="form-control">
+                                                  </div>
+                                                </div>
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <!-- /.col -->
+                                            </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Ёпиш
+                                            </button>
+                                            <button type="submit" class="btn btn-primary">Қўшиш</button>
+                                          </div>
+
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="tirkamalar w-100">
+                                  <div class="col-3 d-none added_tirkama">
+                                    <span>+</span>
+                                    <div class="added_tirkama_content">Тиркама 1 / 21315</div>
+                                  </div>
+                                </div>
+                                <!-- /.col -->
+                              </div>
+                              <!-- /.row -->
+                            </div>
+                            <!-- /.card-body -->
+
+                          </div>
+                          <!-- /.card -->
+                        </div>
+
+                        <div class="col-6 d-none">
+                          <div class="card card-primary background-blue">
+                            <div class="card-header" data-card-widget="collapse">
+                              <h3 class="card-title">Ҳайдовчи тўғрисида маълумот</h3>
+
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                  <i class="fas fa-minus"></i>
+                                </button>
+
+                              </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body ">
+                              <div class="row">
+                                <div class="col-4">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Ҳайдовчи исми</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-4">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Ҳайдовчи фамилияси</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-4">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Паспорт серияси ва рақами</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                              </div>
+                              <div class="row">
+                                <div class="col-6">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Ҳайдовининг фуқаролиги </label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                      <option selected="selected">Узбекистан</option>
+                                      <option>Россия</option>
+                                      <option>Қозоғистон</option>
+                                      <option>Туркманистон</option>
+                                      <option>Қирғизистон</option>
+                                      <option>Тожикистон</option>
+                                      <option>Афғонистон</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-6">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Ҳайдовчи ПНФЛ</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                              </div>
+                              <!-- /.row -->
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                        </div>
+
+                        <div class="col-6 d-none">
+                          <div class="card card-primary background-blue">
+                            <div class="card-header" data-card-widget="collapse">
+                              <h3 class="card-title">Ташиш тўғрисида маълумот</h3>
+
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                  <i class="fas fa-minus"></i>
+                                </button>
+
+                              </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body ">
+                              <div class="row">
+                                <div class="col-4">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Юк ташиш бошланган давлат </label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                      <option selected="selected">Узбекистан</option>
+                                      <option>Россия</option>
+                                      <option>Қозоғистон</option>
+                                      <option>Туркманистон</option>
+                                      <option>Қирғизистон</option>
+                                      <option>Тожикистон</option>
+                                      <option>Афғонистон</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-4">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Юк қабул қилинадиган давлат </label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                      <option selected="selected">Узбекистан</option>
+                                      <option>Россия</option>
+                                      <option>Қозоғистон</option>
+                                      <option>Туркманистон</option>
+                                      <option>Қирғизистон</option>
+                                      <option>Тожикистон</option>
+                                      <option>Афғонистон</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-4">
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label>Рухсатнома рақами</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                              </div>
+
+                              <!-- /.row -->
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transport-2 d-none">Темирйўл</div>
+                    <div class="transport-3 d-none">Самолёт</div>
+                    <div class="transport-4 d-none">Кема</div>
+
+
+                  </div>
+                  <!-- /.container-fluid -->
+                </section>
+
+              </fieldset>
+              <fieldset class="next">
+                <section class="content sender_content">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card card-default ">
+                          <div class="card-header" data-card-widget="collapse">
+                            <h3 class="card-title">Юк ташувчи тўғрисида маълумотларни киритиш</h3>
+
+                            <div class="card-tools">
+                              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                              </button>
+
+                            </div>
+                          </div>
+                          <!-- /.card-header -->
+                          <div class="card-body ">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <!-- /.form-group -->
+                                <div class="form-group">
+                                  <label>Юк ташувчи номи / Жисмоний шахс ФИО</label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <!-- /.form-group -->
+                              </div>
+                              <!-- /.col -->
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                  <label>Юк ташувчи давлати </label>
+                                  <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">Узбекистан</option>
+                                    <option>Россия</option>
+                                    <option>Қозоғистон</option>
+                                    <option>Туркманистон</option>
+                                    <option>Қирғизистон</option>
+                                    <option>Тожикистон</option>
+                                    <option>Афғонистон</option>
+                                  </select>
+                                </div>
+
+                                <!-- /.form-group -->
+                              </div>
+                              <!-- /.col -->
+                              <div class="col-md-2">
+                                <div class="form-group">
+                                  <label>Юк ташувчи СТИРи</label>
+                                  <input type="text" class="form-control">
+                                </div>
+
+                                <!-- /.form-group -->
+                              </div>
+                              <!-- /.col -->
+
+                            </div>
+                            <!-- /.row -->
+                          </div>
+                          <!-- /.card-body -->
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- /.card -->
+
+                  </div>
+                  <!-- /.container-fluid -->
+                </section>
+
+
+              </fieldset>
+              <fieldset class="next">
+                <section class="content">
+                  <div class="col-6">
+                    <h3 class="pb-4">Юборувчилар тўғрисида маълумот</h3>
+                    <div class="senders">
+
+                      <div class="card card-primary collapsed-card sender-item">
+                        <div class="card-header p-2" data-card-widget="collapse">
+                          <h3 class="card-title align-content-center">1- юборувчи</h3>
+                          <div class="sender_remove">Ўчириш</div>
+                        </div>
+
+                        <div class="card-body" style="display: none">
+                          <div class="justify-content-center">
+                            <div class="card card-primary card-tabs">
+                              <div class="card-header p-0 pt-1">
+                                <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link " id="custom-tabs-one-home-tab" data-toggle="pill"
+                                       href="#custom-tabs-one-home" role="tab"
+                                       aria-controls="custom-tabs-one-home"
+                                       aria-selected="true">Жисмоний шахс</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" id="custom-tabs-one-profile-tab" data-toggle="pill"
+                                       href="#custom-tabs-one-profile" role="tab"
+                                       aria-controls="custom-tabs-one-profile"
+                                       aria-selected="false">Юридик шахс</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="card-body">
+                                <div class="tab-content" id="custom-tabs-one-tabContent">
+                                  <div class="tab-pane fade " id="custom-tabs-one-home" role="tabpanel"
+                                       aria-labelledby="custom-tabs-one-home-tab">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <!-- SELECT2 EXAMPLE -->
+                                        <div class="card card-primary background-blue">
+                                          <div class="card-body ">
+                                            <div class="row">
+
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>Фамилияси</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>Исми</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>Шарифи</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>СТИР</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div class="form-group">
+                                                  <label>Манзили</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>Телефон номери</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>Email </label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-12">
+                                                <h3>Паспорт маълумотлари</h3>
+                                              </div>
+                                            </div>
+                                            <div class="row passport-fields">
+                                              <div class="col-2">
+                                                <div class="form-group">
+                                                  <label>Жисмоний шахснинг шахсий идентификация рақами</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+                                              </div>
+                                              <div class="col-2">
+                                                <div class="form-group">
+                                                  <label>Паспорт серияси ва рақами</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+                                              </div>
+                                              <div class="col-2">
+                                                <div class="form-group">
+                                                  <label>Берилган вақти</label>
+                                                  <input type="date" class="form-control">
+                                                </div>
+                                              </div>
+
+                                              <div class="col-3">
+                                                <div class="form-group">
+                                                  <label>Ким томонидан берилган</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+                                              </div>
+                                              <div class="col-md-3">
+                                                <div class="form-group">
+                                                  <label>Фуқаролиги</label>
+                                                  <select class="form-control select2" style="width: 100%;">
+                                                    <option selected="selected">Узбекистан</option>
+                                                    <option>Россия</option>
+                                                    <option>Қозоғистон</option>
+                                                    <option>Туркманистон</option>
+                                                    <option>Қирғизистон</option>
+                                                    <option>Тожикистон</option>
+                                                    <option>Афғонистон</option>
+                                                  </select>
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <!-- /.col -->
+                                            </div>
+
+                                            <!-- /.row -->
+                                          </div>
+                                          <!-- /.card-body -->
+
+                                        </div>
+                                        <!-- /.card -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade active show" id="custom-tabs-one-profile"
+                                       role="tabpanel"
+                                       aria-labelledby="custom-tabs-one-profile-tab">
+                                    <div class="row">
+                                      <div class="col-12">
+                                        <!-- SELECT2 EXAMPLE -->
+                                        <div class="card card-primary background-blue">
+                                          <div class="card-body ">
+                                            <div class="row">
+
+                                              <div class="col-md-4">
+                                                <div class="form-group">
+                                                  <label>Юридик шахс номи</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>СТИР</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div class="form-group">
+                                                  <label>Манзили</label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                              <div class="col-md-2">
+                                                <div class="form-group">
+                                                  <label>Email </label>
+                                                  <input type="text" class="form-control">
+                                                </div>
+
+                                                <!-- /.form-group -->
+                                              </div>
+                                            </div>
+
+                                            <!-- /.row -->
+                                          </div>
+                                          <!-- /.card-body -->
+
+                                        </div>
+                                        <!-- /.card -->
+                                      </div>
+                                    </div>
+
+                                  </div>
+
+                                </div>
+                              </div>
+                              <!-- /.card -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sender-items">
+                      </div>
+
+
+                      <div id="sender_add">Қўшиш</div>
+
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <h3>Юк қабул қилувчилар</h3>
+                    <div class="card card-primary">
+                      <div class="card-header p-2" data-card-widget="collapse" aria-expanded="false">
+                        <h3 class="card-title align-content-center">1- қабул қилувчи</h3>
+                      </div>
+                      <div class="card-body">
+                        <div class="justify-content-center">
+                          <div class="card card-primary card-tabs">
+                            <div class="card-header p-0 pt-1">
+                              <ul class="nav nav-tabs" id="custom-tabs-one-tab2" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link " id="custom-tabs-one-home-tab2" data-toggle="pill"
+                                     href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home"
+                                     aria-selected="true">Жисмоний шахс</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="custom-tabs-one-profile-tab2" data-toggle="pill"
+                                     href="#custom-tabs-one-profile" role="tab"
+                                     aria-controls="custom-tabs-one-profile"
+                                     aria-selected="false">Юридик шахс</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="card-body">
+                              <div class="tab-content" id="custom-tabs-one-tabContent2">
+                                <div class="tab-pane fade " id="custom-tabs-one-home2" role="tabpanel"
+                                     aria-labelledby="custom-tabs-one-home-tab">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <!-- SELECT2 EXAMPLE -->
+                                      <div class="card card-primary background-blue">
+                                        <div class="card-body ">
+                                          <div class="row">
+
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>Фамилияси</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>Исми</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>Шарифи</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>СТИР</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label>Манзили</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>Телефон номери</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>Email </label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-12">
+                                              <h3>Паспорт маълумотлари</h3>
+                                            </div>
+                                          </div>
+                                          <div class="row passport-fields">
+                                            <div class="col-2">
+                                              <div class="form-group">
+                                                <label>Жисмоний шахснинг шахсий идентификация рақами</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="col-2">
+                                              <div class="form-group">
+                                                <label>Паспорт серияси ва рақами</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="col-2">
+                                              <div class="form-group">
+                                                <label>Берилган вақти</label>
+                                                <input type="date" class="form-control">
+                                              </div>
+                                            </div>
+
+                                            <div class="col-3">
+                                              <div class="form-group">
+                                                <label>Ким томонидан берилган</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                              <div class="form-group">
+                                                <label>Фуқаролиги</label>
+                                                <select class="form-control select2" style="width: 100%;">
+                                                  <option selected="selected">Узбекистан</option>
+                                                  <option>Россия</option>
+                                                  <option>Қозоғистон</option>
+                                                  <option>Туркманистон</option>
+                                                  <option>Қирғизистон</option>
+                                                  <option>Тожикистон</option>
+                                                  <option>Афғонистон</option>
+                                                </select>
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <!-- /.col -->
+                                          </div>
+
+                                          <!-- /.row -->
+                                        </div>
+                                        <!-- /.card-body -->
+
+                                      </div>
+                                      <!-- /.card -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade active show" id="custom-tabs-one-profile"
+                                     role="tabpanel"
+                                     aria-labelledby="custom-tabs-one-profile-tab">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <!-- SELECT2 EXAMPLE -->
+                                      <div class="card card-primary background-blue">
+                                        <div class="card-body ">
+                                          <div class="row">
+
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label>Юридик шахс номи</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>СТИР</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-4">
+                                              <div class="form-group">
+                                                <label>Манзили</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                <label>Email </label>
+                                                <input type="text" class="form-control">
+                                              </div>
+
+                                              <!-- /.form-group -->
+                                            </div>
+                                          </div>
+
+                                          <!-- /.row -->
+                                        </div>
+                                        <!-- /.card-body -->
+
+                                      </div>
+                                      <!-- /.card -->
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </fieldset>
+              <fieldset class="next">
+                <label for="referrer">Referred by:</label>
+                <input type="text" name="referrer">
+                <label for="phone">Daytime Phone:</label>
+                <input type="tel" name="phone">
+              </fieldset>
+              <a class="btn" id="next">Кейинги </a>
+              <input type="submit" class="btn">
+            </div>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.1.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<!--<script src="dist/js/pages/dashboard.js"></script>-->
+<script src="assets/script.js"></script>
+</body>
+</html>
